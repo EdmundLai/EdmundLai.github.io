@@ -1,5 +1,7 @@
 import React from 'react';
 import { HashRouter as Router, Link, Switch, Route } from 'react-router-dom';
+import Bio from './components/Bio/Bio';
+import Portfolio from './components/Portfolio/Portfolio';
 import './App.css';
 
 function App() {
@@ -7,11 +9,11 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
-          <h1>Edmund's Blog</h1>
+          <h1>Edmund Lai</h1>
           <nav>
             <ul>
               <li>
-                <Link to="/bio">Bio</Link>
+              <Link to="/">Home</Link>
               </li>
               <li>
                 <Link to="/portfolio">Portfolio</Link>
@@ -21,41 +23,21 @@ function App() {
         </header>
         <div className="App-body">
           <Switch>
-            <Route path="/bio">
-              <Bio />
-            </Route>
             <Route path="/portfolio">
               <Portfolio />
+            </Route>
+            <Route exact path="/">
+              <Bio />
             </Route>
           </Switch>
         </div>
 
         <div className="App-footer">
-          <p>Footer content</p>
+          &#x24B8; 2019 Edmund Lai
         </div>
       </div>
     </Router>
   );
-}
-
-class Bio extends React.Component {
-  render() {
-    return(
-      <div className="Bio">
-        Here is my bio section.
-      </div>
-    );
-  }
-}
-
-class Portfolio extends React.Component {
-  render() {
-    return(
-      <div className="Portfolio">
-        Here is my portfolio.
-      </div>
-    );
-  }
 }
 
 export default App;

@@ -1,0 +1,24 @@
+.Bio {
+  display: flex;
+  border: solid 0.1rem;
+  max-width: 70vw;
+  padding: 1rem;
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+
+.BioText {
+  flex-basis: 50%;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.BioImg {
+  flex-basis: 30%;
+}
+
+.BioImg img {
+  image-orientation: from-image;
+  max-width: 100%;
+  height: auto;
+}
