@@ -1,4 +1,5 @@
 import React from 'react';
+import edmund from './edmund.jpg';
 import './Bio.css';
 
 class Bio extends React.Component {
@@ -18,7 +19,7 @@ class Bio extends React.Component {
           </p>
         </div>
         <div className="BioImg">
-          <img src="/edmund.jpg" alt="Edmund Lai"/>
+          <img src={edmund} alt="Edmund Lai"/>
         </div>
       </div>
     );
