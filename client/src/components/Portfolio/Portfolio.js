@@ -22,13 +22,13 @@ class Portfolio extends React.Component {
           Portfolio
         </h2>
         <ProjectCard 
-          imgsrc="/portfolio/lolstats2.png"
+          imgsrc="/lolstats2.png"
           title="League of Legends Stats App"
           description={desc1}
           projLink="https://lol-stats-analysis.herokuapp.com/"
         />
         <ProjectCard
-          imgsrc="/portfolio/ping_app_demo.png"
+          imgsrc="/ping_app_demo.png"
           title="League of Legends Ping Checker"
           description={desc2}
           projLink="https://github.com/EdmundLai/League-of-Legends-Ping-App/"

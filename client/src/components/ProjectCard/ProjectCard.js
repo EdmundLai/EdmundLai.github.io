@@ -7,7 +7,7 @@ class ProjectCard extends React.Component {
       <div className="ProjectCard">
         <div className="ProjectImage">
           <a href={this.props.projLink}>
-            <img src={this.props.imgsrc} alt="Champion Stats Card"/>
+            <img src={this.props.imgsrc} alt={this.props.title}/>
           </a>
         </div>
         <div className="ProjectDescription">
