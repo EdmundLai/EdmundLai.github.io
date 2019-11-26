@@ -1,0 +1,25 @@
+.ProjectCard {
+  display: flex;
+  max-width: 70vw;
+  border: 0.1rem solid;
+  justify-content: space-around;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.ProjectImage {
+  flex-basis: 45%;
+}
+
+.ProjectImage img {
+  max-width: 100%;
+}
+
+.ProjectDescription {
+  flex-basis: 45%;
+}
+
+.DescriptionBody {
+  font-size: 1rem;
+  text-align: left;
+}
