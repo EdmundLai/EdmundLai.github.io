@@ -1,7 +1,5 @@
 import React from 'react';
 import ProjectCard from '../ProjectCard/ProjectCard';
-import proj1pic from './lolstats2.png';
-import proj2pic from './ping_app_demo.png';
 import './Portfolio.css';
 
 class Portfolio extends React.Component {
@@ -24,13 +22,13 @@ class Portfolio extends React.Component {
           Portfolio
         </h2>
         <ProjectCard 
-          imgsrc={proj1pic}
+          imgsrc="/lolstats2.png"
           title="League of Legends Stats App"
           description={desc1}
           projLink="https://lol-stats-analysis.herokuapp.com/"
         />
         <ProjectCard
-          imgsrc={proj2pic}
+          imgsrc="/ping_app_demo.png"
           title="League of Legends Ping Checker"
           description={desc2}
           projLink="https://github.com/EdmundLai/League-of-Legends-Ping-App/"
