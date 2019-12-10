@@ -28,7 +28,10 @@ class ProjectCard extends React.Component {
 
   render() {
 
-    let isMobile = this.state.windowWidth < 500 ? true : false;
+    let isMobile = this.state.windowWidth < 1000 ? true : false;
+    let isTablet = this.state.windowWidth < 1200 ? true : false;
+
+    let tabletClass = "";
 
     if(isMobile) {
       return(
@@ -45,8 +48,12 @@ class ProjectCard extends React.Component {
         </div>
       );
     } else {
+      if(isTablet) {
+        tabletClass = "CardTablet";
+      }
+
       return(
-        <div className="ProjectCard">
+        <div className={`ProjectCard ${tabletClass}`}>
           <div className="ProjectImage">
             <a href={this.props.projLink}>
               <img src={this.props.imgsrc} alt={this.props.title}/>

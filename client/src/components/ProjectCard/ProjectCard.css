@@ -1,11 +1,15 @@
 .ProjectCard {
   display: flex;
-  max-width: 70vw;
+  max-width: 80vw;
   border: 0.1rem solid;
   background-color: #f3dfdf;
   justify-content: space-around;
   padding: 1rem;
   margin: 1rem 0;
+}
+
+.CardTablet {
+  max-width: 90vw;
 }
 
 .ProjectCardMobile {
@@ -15,6 +19,7 @@
   margin-bottom: 1rem;
   border: 0.1rem solid;
   padding: 0.3rem;
+  margin: 1rem 0.5rem;
 }
 
 .ProjectImage {

@@ -27,7 +27,10 @@ class Bio extends React.Component {
   }
 
   render() {
-    let isMobile = this.state.windowWidth < 500 ? true : false;
+    let isMobile = this.state.windowWidth < 640 ? true : false;
+    let isTablet = this.state.windowWidth < 950 ? true : false;
+
+    let containerClass = "BioContainer";
 
     if(isMobile) {
       return(
@@ -53,10 +56,13 @@ class Bio extends React.Component {
         </div>
       );
     } else {
+      if(isTablet) {
+        containerClass = "BioContainerTablet";
+      }
       return(
         <div className="Bio">
           <h2>About Me</h2>
-          <div className="BioContainer">
+          <div className={containerClass}>
             <div className="BioText">
               <p>Hi, I'm Edmund!</p>
               <p>
