@@ -1,10 +1,22 @@
 .Bio {
+  margin-bottom: 1rem;
+}
+
+.BioContainer {
   display: flex;
   border: solid 0.1rem;
   max-width: 70vw;
   padding: 1rem;
   justify-content: space-around;
-  margin: 2rem 0;
+  margin-bottom: 1rem;
+}
+
+.BioContainerMobile {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  border: solid 0.1rem;
+  margin-bottom: 1rem;
 }
 
 .BioText {

@@ -2,9 +2,19 @@
   display: flex;
   max-width: 70vw;
   border: 0.1rem solid;
+  background-color: #f3dfdf;
   justify-content: space-around;
   padding: 1rem;
   margin: 1rem 0;
+}
+
+.ProjectCardMobile {
+  display: flex;
+  flex-direction: column;
+  background-color: #f3dfdf;
+  margin-bottom: 1rem;
+  border: 0.1rem solid;
+  padding: 0.3rem;
 }
 
 .ProjectImage {
