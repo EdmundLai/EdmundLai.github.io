@@ -39,21 +39,8 @@ class Bio extends React.Component {
         <div className="Bio">
           <h2>About Me</h2>
           <div className="BioContainerMobile">
-            <div className="BioImg">
-              <img src={BioPicture} alt="Edmund Lai"/>
-            </div>
-            <div className="BioText">
-              <p>Hi, I'm Edmund!</p>
-              <p>
-                I'm passionate about creating code that helps make people's lives easier.
-              </p>
-              <p>
-                I'm a web developer, musician, and always curious to learn more about the world we live in.
-              </p>
-              <p>
-                I'm also interested in game development and games in general, so I enjoy making projects that can help people improve their gameplay or tilt a little less.
-              </p>
-            </div>
+            <BioImg />
+            <BioText />
           </div>
         </div>
       );
@@ -65,26 +52,33 @@ class Bio extends React.Component {
         <div className="Bio">
           <h2>About Me</h2>
           <div className={containerClass}>
-            <div className="BioText">
-              <p>Hi, I'm Edmund!</p>
-              <p>
-                I'm passionate about creating code that helps make people's lives easier.
-              </p>
-              <p>
-                I'm a web developer, musician, and always curious to learn more about the world we live in.
-              </p>
-              <p>
-                I'm also interested in game development and games in general, so I enjoy making projects that can help people improve their gameplay or tilt a little less.
-              </p>
-            </div>
-            <div className="BioImg">
-              <img src={BioPicture} alt="Edmund Lai"/>
-            </div>
+            <BioText />
+            <BioImg />
           </div>
         </div>
       );
     }
   }
 }
+
+const BioImg = () =>
+  (<div className="BioImg">
+    <img src={BioPicture} alt="Edmund Lai"/>
+  </div>);
+
+
+const BioText = () =>
+  (<div className="BioText">
+    <p>Hi, I'm Edmund!</p>
+    <p>
+      I'm passionate about creating code that helps make people's lives easier.
+    </p>
+    <p>
+      I'm a web developer, musician, and always curious to learn more about the world we live in.
+    </p>
+    <p>
+      I'm also interested in game development and games in general, so I enjoy making projects that can help people improve their gameplay or tilt a little less.
+    </p>
+  </div>);
 
 export default Bio;
