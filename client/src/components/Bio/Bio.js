@@ -1,6 +1,8 @@
 import React from 'react';
 import './Bio.css';
 
+const BioPicture = require('../../assets/edmund1.jpg');
+
 class Bio extends React.Component {
   constructor(props) {
     super(props);
@@ -38,7 +40,7 @@ class Bio extends React.Component {
           <h2>About Me</h2>
           <div className="BioContainerMobile">
             <div className="BioImg">
-              <img src="/edmund.jpg" alt="Edmund Lai"/>
+              <img src={BioPicture} alt="Edmund Lai"/>
             </div>
             <div className="BioText">
               <p>Hi, I'm Edmund!</p>
@@ -76,7 +78,7 @@ class Bio extends React.Component {
               </p>
             </div>
             <div className="BioImg">
-              <img src="/edmund.jpg" alt="Edmund Lai"/>
+              <img src={BioPicture} alt="Edmund Lai"/>
             </div>
           </div>
         </div>
