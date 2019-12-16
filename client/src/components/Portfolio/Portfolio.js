@@ -2,6 +2,9 @@ import React from 'react';
 import ProjectCard from '../ProjectCard/ProjectCard';
 import './Portfolio.css';
 
+const LOLStatsPicture = require('../../assets/lolstats2.PNG');
+const PingDemoPicture = require('../../assets/ping_app_demo.PNG');
+
 class Portfolio extends React.Component {
   render() {
     let desc1 =
@@ -22,13 +25,13 @@ class Portfolio extends React.Component {
           Portfolio
         </h2>
         <ProjectCard 
-          imgsrc="/lolstats2.png"
+          imgsrc={LOLStatsPicture}
           title="League of Legends Stats App"
           description={desc1}
           projLink="https://lol-stats-analysis.herokuapp.com/"
         />
         <ProjectCard
-          imgsrc="/ping_app_demo.png"
+          imgsrc={PingDemoPicture}
           title="League of Legends Ping Checker"
           description={desc2}
           projLink="https://github.com/EdmundLai/League-of-Legends-Ping-App/"
