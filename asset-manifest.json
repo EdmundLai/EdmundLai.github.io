@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.de513fbd.chunk.css",
-    "main.js": "/static/js/main.8aedd021.chunk.js",
-    "main.js.map": "/static/js/main.8aedd021.chunk.js.map",
+    "main.js": "/static/js/main.859d0ba3.chunk.js",
+    "main.js.map": "/static/js/main.859d0ba3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c012fedc.js",
     "runtime-main.js.map": "/static/js/runtime-main.c012fedc.js.map",
-    "static/js/2.18642748.chunk.js": "/static/js/2.18642748.chunk.js",
-    "static/js/2.18642748.chunk.js.map": "/static/js/2.18642748.chunk.js.map",
+    "static/js/2.f74faf36.chunk.js": "/static/js/2.f74faf36.chunk.js",
+    "static/js/2.f74faf36.chunk.js.map": "/static/js/2.f74faf36.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.de513fbd.chunk.css.map": "/static/css/main.de513fbd.chunk.css.map",
-    "static/js/2.18642748.chunk.js.LICENSE.txt": "/static/js/2.18642748.chunk.js.LICENSE.txt",
-    "static/media/edmund1.jpg": "/static/media/edmund1.587d9f8d.jpg",
-    "static/media/lolstatsnew.PNG": "/static/media/lolstatsnew.67558990.PNG",
-    "static/media/ping_app_demo.PNG": "/static/media/ping_app_demo.5067135c.PNG"
+    "static/js/2.f74faf36.chunk.js.LICENSE.txt": "/static/js/2.f74faf36.chunk.js.LICENSE.txt",
+    "static/media/edmund1.587d9f8d.jpg": "/static/media/edmund1.587d9f8d.jpg",
+    "static/media/lolstatsnew.67558990.PNG": "/static/media/lolstatsnew.67558990.PNG",
+    "static/media/ping_app_demo.5067135c.PNG": "/static/media/ping_app_demo.5067135c.PNG"
   },
   "entrypoints": [
     "static/js/runtime-main.c012fedc.js",
-    "static/js/2.18642748.chunk.js",
+    "static/js/2.f74faf36.chunk.js",
     "static/css/main.de513fbd.chunk.css",
-    "static/js/main.8aedd021.chunk.js"
+    "static/js/main.859d0ba3.chunk.js"
   ]
 }
