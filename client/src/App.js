@@ -1,8 +1,8 @@
-import React from 'react';
-import { HashRouter as Router, Link, Switch, Route } from 'react-router-dom';
-import Bio from './components/Bio/Bio';
-import Portfolio from './components/Portfolio/Portfolio';
-import './App.css';
+import React from "react";
+import { HashRouter as Router, Link, Switch, Route } from "react-router-dom";
+import Bio from "./components/Bio/Bio";
+import Portfolio from "./components/Portfolio/Portfolio";
+import "./App.css";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
           <nav>
             <ul>
               <li>
-              <Link to="/">Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
                 <Link to="/portfolio">Portfolio</Link>
@@ -32,9 +32,7 @@ function App() {
           </Switch>
         </div>
 
-        <div className="App-footer">
-          &#x24B8; 2019 Edmund Lai
-        </div>
+        <div className="App-footer">&#x24B8; 2020 Edmund Lai</div>
       </div>
     </Router>
   );

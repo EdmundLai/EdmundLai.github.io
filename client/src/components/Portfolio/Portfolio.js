@@ -1,30 +1,43 @@
-import React from 'react';
-import ProjectCard from '../ProjectCard/ProjectCard';
-import './Portfolio.css';
+import React from "react";
+import ProjectCard from "../ProjectCard/ProjectCard";
+import "./Portfolio.css";
 
-const LOLStatsPicture = require('../../assets/lolstats2.PNG');
-const PingDemoPicture = require('../../assets/ping_app_demo.PNG');
+const LOLStatsPicture = require("../../assets/lolstatsnew.PNG");
+const PingDemoPicture = require("../../assets/ping_app_demo.PNG");
 
 class Portfolio extends React.Component {
   render() {
-    let desc1 =
-    <>
-      <p>Website dedicated to providing useful information for each game to League of Legends players looking to analyze their gameplay.</p>
-      <p>Provides important stats such as Kills, Deaths, Assists, and gold and experience earned to analyze overall performance.</p>
-      <p>Developed using React and Node.JS.</p>
-    </>;
-    let desc2 = 
-    <>
-      <p>Application developed to monitor latency to League of Legends servers outside of game, so that players can check if their internet connection is stable and won't impair their ingame performance.</p>
-      <p>Uses built in TCP/IP ping command in operating system to connect to the server IP address to check connection quality.</p>
-      <p>Developed using Python and Tkinter.</p>
-    </>
-    return(
+    let desc1 = (
+      <>
+        <p>
+          Website dedicated to providing useful information for each game to
+          League of Legends players looking to analyze their gameplay.
+        </p>
+        <p>
+          Provides important stats such as Kills, Deaths, Assists, and gold and
+          experience earned to analyze overall performance.
+        </p>
+        <p>Developed using React and Node.JS.</p>
+      </>
+    );
+    let desc2 = (
+      <>
+        <p>
+          Application developed to monitor latency to League of Legends servers
+          outside of game, so that players can check if their internet
+          connection is stable and won't impair their ingame performance.
+        </p>
+        <p>
+          Uses built in TCP/IP ping command in operating system to connect to
+          the server IP address to check connection quality.
+        </p>
+        <p>Developed using Python and Tkinter.</p>
+      </>
+    );
+    return (
       <div className="Portfolio">
-        <h2>
-          Portfolio
-        </h2>
-        <ProjectCard 
+        <h2>Portfolio</h2>
+        <ProjectCard
           imgsrc={LOLStatsPicture}
           title="League of Legends Stats App"
           description={desc1}

@@ -39,7 +39,8 @@
   flex-basis: 40%;
 }
 
-.BioContainer .BioImg img, .BioContainerTablet .BioImg img {
+.BioContainer .BioImg img,
+.BioContainerTablet .BioImg img {
   max-width: 100%;
 }
 

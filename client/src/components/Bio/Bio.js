@@ -1,30 +1,30 @@
-import React from 'react';
-import './Bio.css';
+import React from "react";
+import "./Bio.css";
 
-const BioPicture = require('../../assets/edmund1.jpg');
+const BioPicture = require("../../assets/edmund1.jpg");
 
 class Bio extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      windowWidth: window.innerWidth
-    }
+      windowWidth: window.innerWidth,
+    };
 
     this.handleWindowResize = this.handleWindowResize.bind(this);
   }
 
   componentDidMount() {
-    window.addEventListener('resize', this.handleWindowResize);
+    window.addEventListener("resize", this.handleWindowResize);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('resize', this.handleWindowResize);
+    window.removeEventListener("resize", this.handleWindowResize);
   }
 
   handleWindowResize() {
     this.setState({
-      windowWidth: window.innerWidth
+      windowWidth: window.innerWidth,
     });
   }
 
@@ -34,8 +34,8 @@ class Bio extends React.Component {
 
     let containerClass = "BioContainer";
 
-    if(isMobile) {
-      return(
+    if (isMobile) {
+      return (
         <div className="Bio">
           <h2>About Me</h2>
           <div className="BioContainerMobile">
@@ -45,10 +45,10 @@ class Bio extends React.Component {
         </div>
       );
     } else {
-      if(isTablet) {
+      if (isTablet) {
         containerClass = "BioContainerTablet";
       }
-      return(
+      return (
         <div className="Bio">
           <h2>About Me</h2>
           <div className={containerClass}>
@@ -61,24 +61,28 @@ class Bio extends React.Component {
   }
 }
 
-const BioImg = () =>
-  (<div className="BioImg">
-    <img src={BioPicture} alt="Edmund Lai"/>
-  </div>);
+const BioImg = () => (
+  <div className="BioImg">
+    <img src={BioPicture} alt="Edmund Lai" />
+  </div>
+);
 
-
-const BioText = () =>
-  (<div className="BioText">
+const BioText = () => (
+  <div className="BioText">
     <p>Hi, I'm Edmund!</p>
     <p>
       I'm passionate about creating code that helps make people's lives easier.
     </p>
     <p>
-      I'm a web developer, musician, and always curious to learn more about the world we live in.
+      I'm a web developer, musician, and always curious to learn more about the
+      world we live in.
     </p>
     <p>
-      I'm also interested in game development and games in general, so I enjoy making projects that can help people improve their gameplay or tilt a little less.
+      I'm also interested in game development and games in general, so I enjoy
+      making projects that can help people improve their gameplay or tilt a
+      little less.
     </p>
-  </div>);
+  </div>
+);
 
 export default Bio;
