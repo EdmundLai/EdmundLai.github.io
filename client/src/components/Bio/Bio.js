@@ -1,7 +1,7 @@
 import React from "react";
 import "./Bio.css";
 
-const BioPicture = require("../../assets/edmund1.jpg");
+import BioPicture from "../../assets/edmund1.jpg";
 
 class Bio extends React.Component {
   constructor(props) {

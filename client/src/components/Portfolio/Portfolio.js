@@ -2,8 +2,8 @@ import React from "react";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import "./Portfolio.css";
 
-const LOLStatsPicture = require("../../assets/lolstatsnew.PNG");
-const PingDemoPicture = require("../../assets/ping_app_demo.PNG");
+import LOLStatsPicture from "../../assets/lolstatsnew.PNG";
+import PingDemoPicture from "../../assets/ping_app_demo.PNG";
 
 class Portfolio extends React.Component {
   render() {
