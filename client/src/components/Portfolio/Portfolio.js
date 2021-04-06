@@ -78,7 +78,6 @@ class Portfolio extends React.Component {
           description={desc1}
           projLink="https://lol-stats-analysis.herokuapp.com/"
         />
-
         <ProjectCard
           imgsrc={ContentKingPicture}
           title="Content King"
@@ -89,7 +88,7 @@ class Portfolio extends React.Component {
           imgsrc={DiscordClonePicture}
           title="Discord Clone"
           description={desc4}
-          projLink="discordclonereact.azurewebsites.net/"
+          projLink="https://discordclonereact.azurewebsites.net/"
         />
         <p>
           All the code for my projects can be found at my{" "}
