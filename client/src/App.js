@@ -32,7 +32,7 @@ function App() {
           </Switch>
         </div>
 
-        <div className="App-footer">&#x24B8; 2020 Edmund Lai</div>
+        <div className="App-footer">&#x24B8; 2021 Edmund Lai</div>
       </div>
     </Router>
   );
