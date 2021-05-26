@@ -1,4 +1,12 @@
+.BioPage {
+  margin-bottom: 1rem;
+}
+
 .Bio {
+  margin-bottom: 1rem;
+}
+
+.SocialLinks {
   margin-bottom: 1rem;
 }
 
@@ -7,26 +15,25 @@
   border: solid 0.1rem;
   max-width: 70vw;
   padding: 1rem;
-  justify-content: space-around;
+  background-color: #f3dfdf;
+  border-radius: 10px;
   margin-bottom: 1rem;
 }
 
-.BioContainerTablet {
-  display: flex;
-  border: solid 0.1rem;
-  max-width: 90vw;
-  padding: 1rem;
-  justify-content: space-around;
-  margin-bottom: 1rem;
-}
-
-.BioContainerMobile {
-  display: flex;
+.ContainerMobile {
   flex-direction: column;
   max-width: 90vw;
   padding: 0.5rem;
-  border: solid 0.1rem;
-  margin-bottom: 1rem;
+}
+
+.ContainerTablet {
+  max-width: 90vw;
+  padding: 1rem;
+  justify-content: space-around;
+}
+
+.ContainerStandard {
+  justify-content: space-around;
 }
 
 .BioText {
@@ -39,15 +46,24 @@
   flex-basis: 40%;
 }
 
-.BioContainer .BioImg img,
-.BioContainerTablet .BioImg img {
+.ContainerStandard .BioImg img,
+.ContainerTablet .BioImg img {
   max-width: 100%;
 }
 
-.BioContainerMobile .BioImg img {
+.ContainerMobile .BioImg img {
   max-width: 70%;
 }
 
 .BioImg img {
   height: auto;
+}
+
+.SocialLinks a {
+  color: inherit;
+  margin-right: 0.5rem;
+}
+
+.SocialLinks a:hover {
+  color: blue;
 }

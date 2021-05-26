@@ -1,7 +1,14 @@
 import React from "react";
 import "./Bio.css";
 
-import BioPicture from "../../assets/edmund1.jpg";
+import BioPicture from "../../assets/edmund2.jpg";
+
+import CallIcon from "@material-ui/icons/Call";
+import EmailIcon from "@material-ui/icons/Email";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+
+var classNames = require("classnames");
 
 class Bio extends React.Component {
   constructor(props) {
@@ -29,35 +36,61 @@ class Bio extends React.Component {
   }
 
   render() {
-    let isMobile = this.state.windowWidth < 640 ? true : false;
-    let isTablet = this.state.windowWidth < 950 ? true : false;
+    const containerClassType =
+      this.state.windowWidth < 640
+        ? "ContainerMobile"
+        : this.state.windowWidth < 950
+        ? "ContainerTablet"
+        : "ContainerStandard";
 
-    let containerClass = "BioContainer";
+    const containerClass = classNames("BioContainer", containerClassType);
 
-    if (isMobile) {
-      return (
+    const mobileLink =
+      containerClassType === "ContainerMobile" ? (
+        <a href="tel:4252322309">
+          <CallIcon fontSize="large" />
+        </a>
+      ) : (
+        <></>
+      );
+
+    const bioContent =
+      containerClassType === "ContainerMobile" ? (
+        <>
+          <BioImg />
+          <BioText />
+        </>
+      ) : (
+        <>
+          <BioText />
+          <BioImg />
+        </>
+      );
+
+    return (
+      <div className="BioPage">
         <div className="Bio">
           <h2>About Me</h2>
-          <div className="BioContainerMobile">
-            <BioImg />
-            <BioText />
+          <div className={containerClass}>{bioContent}</div>
+          <p>
+            Feel free to contact me below, or look at the code behind my
+            projects.
+          </p>
+          <div className="SocialLinks">
+            {mobileLink}
+            <a href="mailto:edmund.lai.07@gmail.com">
+              <EmailIcon fontSize="large" />
+            </a>
+            <a href="https://www.linkedin.com/in/edmund-lai-8b9112129/">
+              <LinkedInIcon fontSize="large" />
+            </a>
+            <a href="https://github.com/EdmundLai">
+              <GitHubIcon fontSize="large" />
+            </a>
           </div>
         </div>
-      );
-    } else {
-      if (isTablet) {
-        containerClass = "BioContainerTablet";
-      }
-      return (
-        <div className="Bio">
-          <h2>About Me</h2>
-          <div className={containerClass}>
-            <BioText />
-            <BioImg />
-          </div>
-        </div>
-      );
-    }
+      </div>
+    );
   }
 }
 

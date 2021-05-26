@@ -4,7 +4,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 20vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   font-size: calc(10px + 2vmin);
@@ -32,20 +32,7 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: none;
-  color: white;
-  animation-duration: 1s;
-  animation-name: darken;
-  animation-fill-mode: forwards;
-}
-
-@keyframes darken {
-  from {
-    color: white;
-  }
-
-  to {
-    color: black;
-  }
+  color: grey;
 }
 
 .App-body {
@@ -61,11 +48,11 @@ nav ul li a:hover {
 
 .App-footer {
   background-color: #282c34;
-  min-height: 10vh;
+  min-height: 5vh;
   display: flex;
   flex-direction: column;
   text-align: left;
-  font-size: calc(10px + 2vmin);
   color: white;
   padding: 0.25em 1em 0.25em 1em;
+  justify-content: center;
 }
