@@ -1,26 +1,21 @@
 .ProjectCard {
   display: flex;
-  max-width: 80vw;
   border: 0.1rem solid;
   border-radius: 10px;
   background-color: #f3dfdf;
-  justify-content: space-around;
   padding: 1rem;
   margin: 1rem 0;
 }
 
-.CardTablet {
-  max-width: 90vw;
+.CardMobile {
+  padding: 0.3rem;
+  flex-direction: column;
+  margin: 1rem 0.5rem;
 }
 
-.ProjectCardMobile {
-  display: flex;
-  flex-direction: column;
-  background-color: #f3dfdf;
-  margin-bottom: 1rem;
-  border: 0.1rem solid;
-  padding: 0.3rem;
-  margin: 1rem 0.5rem;
+.CardStandard {
+  max-width: 80vw;
+  justify-content: space-around;
 }
 
 .ProjectImage {

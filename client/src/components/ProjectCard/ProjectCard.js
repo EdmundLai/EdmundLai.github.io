@@ -1,6 +1,8 @@
 import React from "react";
 import "./ProjectCard.css";
 
+var classNames = require("classnames");
+
 class ProjectCard extends React.Component {
   constructor(props) {
     super(props);
@@ -27,42 +29,39 @@ class ProjectCard extends React.Component {
   }
 
   render() {
-    let isMobile = this.state.windowWidth < 1000 ? true : false;
-    let isTablet = this.state.windowWidth < 1200 ? true : false;
+    const cardType =
+      this.state.windowWidth < 1280 ? "CardMobile" : "CardStandard";
 
-    let tabletClass = "";
+    const classContainer = classNames("ProjectCard", cardType);
 
-    if (isMobile) {
-      return (
-        <div className="ProjectCardMobile">
+    const projTitle =
+      cardType === "CardMobile" ? <h3>{this.props.title}</h3> : <></>;
+
+    const projImage = (
+      <div className="ProjectImage">
+        <a href={this.props.projLink}>
+          <img src={this.props.imgsrc} alt={this.props.title} />
+        </a>
+      </div>
+    );
+
+    const projDescription =
+      cardType === "CardMobile" ? (
+        <div className="DescriptionBody">{this.props.description}</div>
+      ) : (
+        <div className="ProjectDescription">
           <h3>{this.props.title}</h3>
-          <div className="ProjectImage">
-            <a href={this.props.projLink}>
-              <img src={this.props.imgsrc} alt={this.props.title} />
-            </a>
-          </div>
           <div className="DescriptionBody">{this.props.description}</div>
         </div>
       );
-    } else {
-      if (isTablet) {
-        tabletClass = "CardTablet";
-      }
 
-      return (
-        <div className={`ProjectCard ${tabletClass}`}>
-          <div className="ProjectImage">
-            <a href={this.props.projLink}>
-              <img src={this.props.imgsrc} alt={this.props.title} />
-            </a>
-          </div>
-          <div className="ProjectDescription">
-            <h3>{this.props.title}</h3>
-            <div className="DescriptionBody">{this.props.description}</div>
-          </div>
-        </div>
-      );
-    }
+    return (
+      <div className={classContainer}>
+        {projTitle}
+        {projImage}
+        {projDescription}
+      </div>
+    );
   }
 }
 
